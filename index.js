@@ -350,6 +350,13 @@ const app = {
                 continueSong.onclick = function () {
                     var id = Number(option.parentElement.getAttribute('data-index'))
                     _this.currentIndex = id - 1;
+                    $('.dashboard').click()
+                }
+
+                // Khi xử lý vào tải bài hát
+                const downloadBtn = option.querySelector('.download')
+                downloadBtn.onclick = function() {
+                    $('.dashboard').click()
                 }
             }
         }
