@@ -129,6 +129,20 @@ const app = {
             path: "./mp3/Baam - Momoland.mp3",
             image: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/3/0/e/a/30ea3cc46512569d3abdaf9e50daddd4.jpg",
             download: "https://data35.chiasenhac.com/downloads/1962/6/1961410-c1c4c396/320/Baam%20-%20Momoland.mp3"
+        },
+        {
+            name: "Tình Bạn Diệu Kỳ",
+            singer: "AMee, Ricky Star, Lăng LD",
+            path: "./mp3/Tinh ban dieu ky.mp3",
+            image: "https://data.chiasenhac.com/data/cover/137/136473.jpg",
+            download: "https://stream.nixcdn.com/NhacCuaTui1010/TinhBanDieuKy-AMeeRickyStarLangLD-6927558.mp3?st=UtTHhzvC0AWZzCVuyxshEA&e=1662620242&download=true"
+        },
+        {
+            name: "Yêu Là Tha Thu",
+            singer: "OnlyC",
+            path: "./mp3/Yêu Là Tha Thu (Em Chưa 18 OST).mp3",
+            image: "https://avatar-ex-swe.nixcdn.com/song/2017/05/15/1/9/3/6/1494842845652_640.jpg",
+            download: "https://nhactre.org/download-mp3/vmjlLAAxhof5/mp3"
         }
     ],
     setConfig(key, value) {
