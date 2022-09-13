@@ -168,6 +168,11 @@
     opacity: 0.8;
   }
 
+  .song .active-heart{
+    color: var(--primary-color);
+  }
+
+  .song.active .heart .heart-icon,
   .song.active .option,
   .song.active .author,
   .song.active .title {
@@ -195,6 +200,11 @@
   .song .author {
     font-size: 12px;
     color: #999;
+  }
+
+  .song .heart{
+    color: #999;
+    padding: 16px 8px;
   }
   
   .song .option {

@@ -2,7 +2,10 @@ const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
 const PLAYER_STORAGE_KEY = 'F8_PLAYER'
+const HEART_STORAGE_KEY = 'HEART_STORAGE'
 
+const dashboard = $('.dashboard');
+const playlist = $('.playlist')
 const player = $('.player')
 const cd = $('.cd');
 const heading = $('header h2')
@@ -16,7 +19,7 @@ const prevBtn = $('.btn-prev')
 const nextBtn = $('.btn-next')
 const randomBtn = $('.btn-random')
 const repeatBtn = $('.btn-repeat')
-const playlist = $('.playlist')
+
 
 const app = {
     currentIndex: 0,
@@ -145,8 +148,9 @@ const app = {
             download: "https://nhactre.org/download-mp3/vmjlLAAxhof5/mp3"
         }
     ],
+    heartList: JSON.parse(localStorage.getItem(PLAYER_STORAGE_KEY))[[HEART_STORAGE_KEY]] || [],
     setConfig(key, value) {
-        this.config[key] = value
+        this.config[key] = value;
         localStorage.setItem(PLAYER_STORAGE_KEY, JSON.stringify(this.config))
     },
     render() {
@@ -159,7 +163,10 @@ const app = {
                         <h3 class="title">${song.name}</h3>
                         <p class="author">${song.singer}</p>
                     </div>
-                    <div class="option">
+                    <div class="heart" data-index=${index}>
+                        <i class="heart-icon ${this.heartList.includes(index) ? 'active-heart fa-solid' : 'fa-regular'} fa-heart"></i>
+                    </div>
+                    <div class="option" data-index=${index}>
                         <i class="fas fa-ellipsis-h"></i>
                         <div class="menu-song">
                             <div class="next-song">
@@ -176,7 +183,12 @@ const app = {
             `
         })
         playlist.innerHTML = htmls.join('')
+        const firstSong = $('.song:first-child')
+        const nameSong = $('.name-song')
+
+        firstSong.style.marginTop = nameSong.offsetHeight - 14 + 'px'
     },
+    
     defineProperties() {
         Object.defineProperty(this, 'currentSong', {
             get: function() {
@@ -286,7 +298,7 @@ const app = {
             audio.play()
             _this.render()
             _this.scrollToActiveSong()
-
+            
         }
 
         // Khi prev song
@@ -332,7 +344,7 @@ const app = {
             const songNode = e.target.closest('.song:not(.active)')
 
             // Xử lý khi click vào song
-            if (songNode && !e.target.closest('.option')) {
+            if (songNode && !e.target.closest('.option') && !e.target.closest('.heart')) {
                 // Xử lý khi click vào song
                 if (songNode) {
                     _this.currentIndex = Number(songNode.dataset.index);
@@ -348,7 +360,7 @@ const app = {
                 let option = e.target.parentElement;
                 if (!option.matches('.option')) {
                     option = e.target;
-                } 
+                }
 
                 const menu = option.querySelector('.menu-song');
                 if (!menu.matches('.active-modal')) {
@@ -362,7 +374,7 @@ const app = {
                 // Khi xử lý vào phát bài tiếp theo
                 const continueSong = option.querySelector('.next-song')
                 continueSong.onclick = function () {
-                    var id = Number(option.parentElement.getAttribute('data-index'))
+                    var id = Number(option.getAttribute('data-index'))
                     _this.currentIndex = id - 1;
                     $('.dashboard').click()
                 }
@@ -371,6 +383,32 @@ const app = {
                 const downloadBtn = option.querySelector('.download')
                 downloadBtn.onclick = function() {
                     $('.dashboard').click()
+                }
+            }
+
+            // Xử lý khi click vào mục heart
+            if (e.target.closest('.heart')) {
+                let heart = e.target.parentElement;
+                if (!heart.matches('.heart')) {
+                    heart = e.target
+                }
+                const id = Number(heart.getAttribute('data-index'))
+                
+                const heartIcon = heart.querySelector('.heart-icon')
+                if (!heartIcon.matches('.active-heart')) {
+                    heartIcon.classList.remove('fa-regular');
+                    heartIcon.classList.add('fa-solid')
+                    heartIcon.classList.add('active-heart')
+                    _this.heartList.push(id)
+                    _this.setConfig(HEART_STORAGE_KEY, _this.heartList)
+                } else {
+                    heartIcon.classList.remove('fa-solid')
+                    heartIcon.classList.add('fa-regular')
+                    heartIcon.classList.remove('active-heart')
+                    _this.heartList = _this.heartList.filter(heartId => {
+                        return heartId !== id
+                    })
+                    _this.setConfig(HEART_STORAGE_KEY, _this.heartList)
                 }
             }
         }
@@ -417,6 +455,7 @@ const app = {
         this.loadCurrentSong()
     },
     start() {
+
         // Gán cấu hình từ config vào ứng dụng
         this.loadConfig()
 
