@@ -206,6 +206,10 @@
     color: #999;
     padding: 16px 8px;
   }
+
+  .song .heart-icon{
+    transition: all ease-out 0.3s;
+  }
   
   .song .option {
     position: relative;
