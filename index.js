@@ -146,6 +146,34 @@ const app = {
             path: "./mp3/Yêu Là Tha Thu (Em Chưa 18 OST).mp3",
             image: "https://avatar-ex-swe.nixcdn.com/song/2017/05/15/1/9/3/6/1494842845652_640.jpg",
             download: "https://nhactre.org/download-mp3/vmjlLAAxhof5/mp3"
+        },
+        {
+            name: "Màu Nước Mắt",
+            singer: "Nguyễn Trần Trung Quân",
+            path: "./mp3/Mau Nuoc Mat - Nguyen Tran Trung Quan.mp3",
+            image: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/8/f/5/0/8f50e5afbf4daa6d062019bc36f3ab1a.jpg",
+            download: "https://data31.chiasenhac.com/downloads/1974/3/1973581-7876722d/128/Mau%20Nuoc%20Mat%20-%20Nguyen%20Tran%20Trung%20Quan.mp3"
+        },
+        {
+            name: "Phía Sau Một Cô Gái",
+            singer: "Soobin Hoàng Sơn",
+            path: "./mp3/Phia Sau Mot Co Gai.mp3",
+            image: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/covers/c/b/cbe2dfb3d65dc97c68f983d09bff78a7_1476796126.jpg",
+            download: "https://stream.nixcdn.com/NhacCuaTui936/PhiaSauMotCoGai-SoobinHoangSon-4632323.mp3?st=n-_ji8s-vqlP3CM7At-YIQ&e=1663172080&download=true"
+        },
+        {
+            name: "Nơi Này Có Anh",
+            singer: "Sơn Tùng M-TP",
+            path: "./mp3/Noi Nay Co Anh - Son Tung M-TP.mp3",
+            image: "https://www.remixviet.net/data/upload/noi-nay-co-anh.png",
+            download: "https://data37.chiasenhac.com/downloads/1897/4/1896719-828a80eb/320/Noi%20Nay%20Co%20Anh%20-%20Son%20Tung%20M-TP.mp3"
+        },
+        {
+            name: "Thằng Điên",
+            singer: "Justatee, Phương Ly",
+            path: "./mp3/Thang Dien - JustaTee_ Phuong Ly.mp3",
+            image: "https://kenh14cdn.com/2018/11/29/mv-thangdien-cover1-15435076998152102352733.jpg",
+            download: "https://data36.chiasenhac.com/downloads/1963/4/1962559-f4a83884/320/Thang%20Dien%20-%20JustaTee_%20Phuong%20Ly.mp3"
         }
     ],
     heartList: JSON.parse(localStorage.getItem(PLAYER_STORAGE_KEY))[[HEART_STORAGE_KEY]] || [],
@@ -283,9 +311,8 @@ const app = {
 
         // Xử lý tua song
         progress.onchange = function(e) {
-            const seekTime = audio.duration / 100 * e.target.value;
+            const seekTime = audio.duration * e.target.value / 100;
             audio.currentTime = seekTime;
-
         }
 
         // Khi next song
