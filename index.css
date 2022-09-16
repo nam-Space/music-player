@@ -38,6 +38,7 @@
   }
   
   .dashboard {
+    overflow: hidden;
     z-index: 1;
     padding: 16px 16px 14px;
     background-color: #fff;
@@ -273,4 +274,48 @@
 
   .download i{
     color: rgb(26, 192, 26);
+  }
+
+  /* Message */
+  .message{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(75, 35, 235);
+    opacity: 0.8;
+    animation: showUpMessage ease-out 0.5s forwards;
+  }
+
+  .remove-message{
+    animation: hideMessage ease-out 0.5s forwards;
+  }
+
+  @keyframes showUpMessage {
+    from{
+      transform: translateX(-100%);
+    } to{
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes hideMessage{
+    from{
+      transform: translateX(0);
+    } to{
+      transform: translateX(-100%);
+    }
+  }
+
+  .message-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    height: 50px;
+  }
+
+  .message-icon{
+    padding-right: 8px;
   }
