@@ -234,7 +234,7 @@ const app = {
             image: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/a/9/e/d/a9ed142c215560ab45f6b2b433907f90.jpg"
         }
     ],
-    heartList: JSON.parse(localStorage.getItem(PLAYER_STORAGE_KEY))[HEART_STORAGE_KEY] || [],
+    heartList: JSON.parse(localStorage.getItem(PLAYER_STORAGE_KEY)) ? JSON.parse(localStorage.getItem(PLAYER_STORAGE_KEY))[HEART_STORAGE_KEY] : [],
     setConfig(key, value) {
         this.config[key] = value;
         localStorage.setItem(PLAYER_STORAGE_KEY, JSON.stringify(this.config))
