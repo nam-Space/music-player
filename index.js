@@ -32,28 +32,24 @@ const app = {
             singer: "AMEE, Hoàng Dũng",
             path: "./mp3/tu thich thich thanh thuong th... - AMEE Hoang Dung (NhacPro.net).flac",
             image: "https://static-images.vnncdn.net/files/publish/2022/5/27/hain7580-102.jpg",
-            download: "https://data3.chiasenhac.com/downloads/2138/5/2137812-dd9daf4b/320/Tu%20Thich%20Thich%20Thanh%20Thuong%20Thuong%20-%20AMe.mp3"
         },
         {
             name: "BlackJack",
             singer: "Sobin Hoàng Sơn, Binz",
             path: "./mp3/BlackJack - Soobin_ Binz.mp3",
             image: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/4/0/5/6/40564f839b476fd66838e497796a3d5f.jpg",
-            download: "http://www.nghenhactre.net/api/music/download/5bd8b1351bd1746bf556877b5b226d14/1607235536/mp3/Blackjack - Binz Soobin Hoàng Sơn.mp3",
         },
         {
             name: "Liếc Mắt Đưa Tình",
             singer: "K-ICM, Lena",
             path: "./mp3/Liec Mat Dua Tinh - K-ICM_ Lena.mp3",
             image:"https://linkhay.mediacdn.vn/storage/users/nhacdjvn/original/2020/12/01/224672.42XC05fc65dccb5efb.jpg",
-            download: "http://www.nghenhactre.net/api/music/download/8693155920af4724b480b5c7fe9595b7/1607822916/mp3/Liếc Mắt Đưa Tình - K-ICM Lena.mp3"
         },
         {
             name: "Chạy Về Khóc Với Anh",
             singer: "Erik",
             path: "./mp3/Chay Ve Khoc Voi Anh - ERIK (NhacPro.net).flac",
             image: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/c/6/d/e/c6def069a1a885c41fe479358fa7c506.jpg",
-            download: "https://vnno-zn-5-tf-mp3-s1-zmp3.zmdcdn.me/baa2ed6e9d2f74712d3e/7034223956028953907?authen=exp=1663513150~acl=/baa2ed6e9d2f74712d3e/*~hmac=83f4957e3ab1fa1af5b7c2eaefb44f4c&fs=MTY2MzM0MDM1MDMyNHx3ZWJWNnwxMDIzODMxNTmUsIC2fDQyLjExMy4xNzMdUngODY&filename=Chay-Ve-Khoc-Voi-Anh-ERIK.mp3"
         },
         {
             name: "Chìm Sâu",
@@ -61,7 +57,6 @@ const app = {
             path: "./mp3/Chim Sau - MCK_ Trung Tran.mp3",
             image:
                 "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/11/16/6/5/0/2/1605491409204_600.jpg",
-            download: "https://data.chiasenhac.com/down2/2230/5/2229564-d379b916/320/Chim%20Sau%20-%20MCK_%20Trung%20Tran.mp3"
         },
         {
             name: "Có Hẹn Với Thanh Xuân",
@@ -69,7 +64,6 @@ const app = {
             path: "./mp3/Co Hen Voi Thanh Xuan - Monstar.mp3",
             image:
                 "https://data.chiasenhac.com/data/cover/144/143191.jpg",
-            download: "http://tainhacmienphihay.mobi/download-music/33255"
         },
         {
             name: "Sài Gòn Đau Lòng Quá",
@@ -78,7 +72,6 @@ const app = {
                 "./mp3/Sai Gon Dau Long Qua - Hua Kim Tuyen Hoang Duyen (NhacPro.net).flac",
             image:
                 "https://cdnmedia.thethaovanhoa.vn/Upload/qPf4BjfjvkrFearu8hrw/files/avatahuakimtuyen.jpg",
-            download: "https://vnno-vn-5-tf-mp3-s1-zmp3.zmdcdn.me/23b37e7a243bcd65942a/6508579472578543996?authen=exp=1663513271~acl=/23b37e7a243bcd65942a/*~hmac=473f97a35448967f9180d174ccfb06da&fs=MTY2MzM0MDQ3MTmUsIC5OHx3ZWJWNnwxMDIzODMxNTmUsIC2fDQyLjExMy4xNzMdUngODY&filename=Sai-Gon-Dau-Long-Qua-Hua-Kim-Tuyen-Hoang-Duyen.mp3"
         },
         {
             name: "Lemon Tree",
@@ -86,7 +79,6 @@ const app = {
             path: "./mp3/Lemon-Tree-Remix-Tiktok-DJ-DESA-Remix.mp3",
             image:
                 "https://avatar-ex-swe.nixcdn.com/singer/avatar/2014/13/7E4149A9_1321_600.jpg",
-            download: "https://nhactiktokhay.com/lemon-tree-remix-tiktok-dj-desa-remix.html?download=10468"
         },
         {
             name: "Shay Nắnggg",
@@ -94,14 +86,12 @@ const app = {
             path: "./mp3/Shay Nanggg - AMee_ Obito.mp3",
             image:
                 "https://dep.com.vn/wp-content/uploads/2022/06/5-4.png",
-            download: "https://nhactiktokhay.com/shay-nanggg-amee-obito.html?download=14986"
         },
         {
             name: "There's No One At All",
             singer: "Sơn Tùng MTP",
             path: "./mp3/There_s No One At All - Son Tung M-TP.mp3",
             image: "https://media.yeah1.com/files/uploads/editors/68/2022/05/09/3wwcbzPK1FwsWYqyTVIHHvFQVD5Og4zX92FTYz40.jpg",
-            download: "https://data.chiasenhac.com/down2/2242/5/2241378-b5c30814/320/There_s%20No%20One%20At%20All%20-%20Son%20Tung%20M-TP.mp3"
         },
         {
             name: "You Don't Know Me",
@@ -109,84 +99,139 @@ const app = {
             path: "./mp3/YouDontKnowMe-OfenbachBrodieBarclay-4396475.mp3",
             image:
               "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/3/a/f/7/3af7f320df86e0f6b76caf147b499cc4.jpg",
-              download: "https://data3.chiasenhac.com/downloads/2114/5/2113489-a10deafe/flac/You%20Don%20t%20Know%20Me%20-%20Ofenbach%20Brodie%20Barclay%20(NhacPro.net).flac?time=1663340673"
+
         },
         {
             name: "Có Em Chờ",
             singer: "MIN, Mr A",
             path: "./mp3/Co Em Cho - MIN Mr A (NhacPro.net).flac",
             image: "https://afamilycdn.com/150157425591193600/2020/10/30/min-160407578725129366232.jpg",
-            download: "https://vnno-vn-6-tf-mp3-s1-zmp3.zmdcdn.me/3292444e9b0a72542b1b/6792228024536335773?authen=exp=1663513527~acl=/3292444e9b0a72542b1b/*~hmac=a1361fa46f9f9e85b39a1c870f3c373a&fs=MTY2MzM0MDmUsICyNzA5M3x3ZWJWNnwxMDIzODMxNTmUsIC2fDQyLjExMy4xNzMdUngODY&filename=Co-Em-Cho-MIN-Mr-A.mp3"
         },
         {
             name: "Anh Đánh Rơi Người Yêu Này",
             singer: "Andiez, AMEE",
             path: "./mp3/Anh Danh Roi Nguoi Yeu Nay.mp3",
             image: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/3/0/8/c/308c5809bbfa86de59709090245b9819.jpg",
-            download: "https://tainhacmoinhat.com/download-mp3/CxqqbaPjwJsI/mp3"
         },
         {
             name: "BAAM",
             singer: "Momoland",
             path: "./mp3/Baam - Momoland.mp3",
             image: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/3/0/e/a/30ea3cc46512569d3abdaf9e50daddd4.jpg",
-            download: "https://data35.chiasenhac.com/downloads/1962/5/1961410-c1c4c396/320/Baam%20-%20Momoland.mp3"
         },
         {
             name: "Tình Bạn Diệu Kỳ",
             singer: "AMee, Ricky Star, Lăng LD",
             path: "./mp3/Tinh ban dieu ky.mp3",
             image: "https://data.chiasenhac.com/data/cover/137/136473.jpg",
-            download: "https://stream.nixcdn.com/NhacCuaTui1010/TinhBanDieuKy-AMeeRickyStarLangLD-6927558.mp3?st=UtTHhzvC0AWZzCVuyxshEA&e=1662620242&download=true"
         },
         {
             name: "Yêu Là Tha Thu",
             singer: "OnlyC",
             path: "./mp3/Yêu Là Tha Thu (Em Chưa 18 OST).mp3",
             image: "https://avatar-ex-swe.nixcdn.com/song/2017/05/15/1/9/3/6/1494842845652_640.jpg",
-            download: "https://nhactre.org/download-mp3/vmjlLAAxhof5/mp3"
         },
         {
             name: "Màu Nước Mắt",
             singer: "Nguyễn Trần Trung Quân",
             path: "./mp3/Mau Nuoc Mat - Nguyen Tran Trung Quan.mp3",
             image: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/8/f/5/0/8f50e5afbf4daa6d062019bc36f3ab1a.jpg",
-            download: "https://vnno-vn-6-tf-mp3-s1-zmp3.zmdcdn.me/3e3d7732b87651280867/852000302350569841?authen=exp=1663513663~acl=/3e3d7732b87651280867/*~hmac=a2d61fa7cd7ef13a8497f0eaa4524a37&fs=MTY2MzM0MDg2MzU1NHx3ZWJWNnwxMDIzODMxNTmUsIC2fDQyLjExMy4xNzMdUngODY&filename=Mau-Nuoc-Mat-Beat-Nguyen-Tran-Trung-Quan.mp3"
         },
         {
             name: "Phía Sau Một Cô Gái",
             singer: "Soobin Hoàng Sơn",
             path: "./mp3/Phia Sau Mot Co Gai.mp3",
             image: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/covers/c/b/cbe2dfb3d65dc97c68f983d09bff78a7_1476796126.jpg",
-            download: "https://data01.chiasenhac.com/downloads/1730/5/1729694-a4afea05/flac/Phia%20Sau%20Mot%20Co%20Gai%20-%20Soobin%20Hoang%20Son%20(NhacPro.net).flac?time=1663341032"
         },
         {
             name: "Nơi Này Có Anh",
             singer: "Sơn Tùng M-TP",
             path: "./mp3/Noi Nay Co Anh - Son Tung M-TP.mp3",
             image: "https://www.remixviet.net/data/upload/noi-nay-co-anh.png",
-            download: "https://data37.chiasenhac.com/downloads/1897/5/1896719-828a80eb/128/Noi%20Nay%20Co%20Anh%20-%20Son%20Tung%20M-TP.mp3"
         },
         {
             name: "Thằng Điên",
             singer: "Justatee, Phương Ly",
             path: "./mp3/Thang Dien - JustaTee_ Phuong Ly.mp3",
             image: "https://kenh14cdn.com/2018/11/29/mv-thangdien-cover1-15435076998152102352733.jpg",
-            download: "https://data36.chiasenhac.com/downloads/1963/5/1962559-f4a83884/128/Thang%20Dien%20-%20JustaTee_%20Phuong%20Ly.mp3"
         },
         {
             name: "Phải Chăng Em Đã Yêu?",
             singer: "Juky San, REDT",
             path: "./mp3/Phai Chang Em Da Yeu - Juky San RedT (NhacPro.net).flac",
             image: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/3/1/e/3/31e3c0cca618fa62edb760f908d6f3c5.jpg",
-            download: "https://vnno-vn-6-tf-mp3-s1-zmp3.zmdcdn.me/a426a0d3fa9213cc4a83/3329983269511390113?authen=exp=1663512857~acl=/a426a0d3fa9213cc4a83/*~hmac=0a0889298a406c995aa42e47a0b9d44c&fs=MTY2MzM0MDA1NzmUsIC3Mnx3ZWJWNnwxMDIzODMxNTmUsIC2fDQyLjExMy4xNzMdUngODY&filename=Phai-Chang-Em-Da-Yeu-Juky-San-RedT.mp3"
         },
         {
             name: "Có Chắc Yêu Là Đây",
             singer: "Sơn Tùng M-TP",
             path: "./mp3/Co Chac Yeu La Day.m4a",
             image: "https://data.chiasenhac.com/data/cover/124/123405.jpg",
-            download: "https://media.phantam.top/files/Nhac-Lossless/m4a/Co%20Chac%20Yeu%20La%20Day.m4a"
+        },
+        {
+            name: "Em Không Sai, Chúng Ta Sai",
+            singer: "Erik",
+            path: "./mp3/Em Khong Sai Chung Ta Sai.m4a",
+            image: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/7/4/0/d/740d5e0fd272d2421d441e9fd5c08fdd.jpg",
+        },
+        {
+            name: "Có Tất Cả Nhưng Thiếu Anh",
+            singer: "Erik",
+            path: "./mp3/Co Tat Ca Nhung Thieu Anh - Erik.mp3",
+            image: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/6/b/e/4/6be430e44902db6e3e28e8a39034f4df.jpg"
+        },
+        {
+            name: "Siren",
+            singer: "TGSN, Tlinh, RZ Mas",
+            path: "./mp3/Siren.mp3",
+            image: "https://kenh14cdn.com/thumb_w/660/203336854389633024/2022/4/14/anh-2-8-1649908138387114238504.jpg",
+        },
+        {
+            name: "Gái Độc Thân",
+            singer: "Tlinh",
+            path: "./mp3/GaiDocThan-tlinh-7041472.mp3",
+            image: "https://data.chiasenhac.com/data/cover/143/142338.jpg"
+        },
+        {
+            name: "Vì Yêu Cứ Đâm Đầu",
+            singer: "Min, JustaTee, Đen",
+            path: "./mp3/Vi Yeu Cu Dam Dau - Min_ JustaTee_ Den.mp3",
+            image: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/6/b/5/9/6b5976bfce7675c94bcd3f9c043bd297.jpg"
+        },
+        {
+            name: "Buông Đôi Tay Nhau Ra",
+            singer: "Sơn Tùng MTP",
+            path: "./mp3/Buong-Doi-Tay-Nhau-Ra-Son-Tung-M-TP.mp3",
+            image: "https://allvpop.com/wp-content/uploads/2016/03/25345210594_7b5592d59c_o.jpg"
+        },
+        {
+            name: "Âm Thầm Bên Em",
+            singer: "Sơn Tùng M-TP",
+            path: "./mp3/Am Tham Ben Em - Son Tung M-TP.mp3",
+            image: "https://i1.sndcdn.com/artworks-000125300780-pmpcrc-t500x500.jpg"
+        },
+        {
+            name: "Gác Lại Âu Lo",
+            singer: "Da LAB, Miu Lê",
+            path: "./mp3/Gac-Lai-Au-Lo-Da-LAB-Miu-Le.mp3",
+            image: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/d/5/8/a/d58aa48a38c0a8dc89c95277b456bc75.jpg"
+        },
+        {
+            name: "Bánh Mỳ Không",
+            singer: "Đạt G, DuUyên",
+            path: "./mp3/BanhMiKhong-DatGDuUyen-6175988.mp3",
+            image: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/2/9/0/6/2906681d4b764cd4677342b66813f25d.jpg"
+        },
+        {
+            name: "Ngày Đầu Tiên",
+            singer: "Đức Phúc",
+            path: "./mp3/Ngày Đầu Tiên.mp3",
+            image: "https://i1.sndcdn.com/artworks-IM3jtFScLqGHmD7m-kH0PzA-t500x500.jpg"
+        },
+        {
+            name: "Hơn Cả Yêu",
+            singer: "Đức Phúc",
+            path: "./mp3/Hon Ca Yeu - Nguyen Duc Phuc.mp3",
+            image: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/a/9/e/d/a9ed142c215560ab45f6b2b433907f90.jpg"
         }
     ],
     heartList: JSON.parse(localStorage.getItem(PLAYER_STORAGE_KEY))[[HEART_STORAGE_KEY]] || [],
@@ -214,7 +259,7 @@ const app = {
                                 <i class="fa-solid fa-circle-play"></i>
                                 <p class="next-song-desc">Phát tiếp theo</p>
                             </div>
-                            <a class="download" download="${song.name}" href="${song.download}">
+                            <a class="download" download="${song.name}" href="${song.path}">
                                 <i class="fa-solid fa-download"></i>
                                 <p class="download-desc">Tải xuống</p>
                             </a>
@@ -265,10 +310,10 @@ const app = {
             const scrollTop = window.scrollY || document.documentElement.scrollTop;
             const newWidth = cdWidth - scrollTop
 
-            cd.style.width = newWidth > 0 ? newWidth + 'px' : 0
-            cd.style.opacity = newWidth / cdWidth
+            cd.style.width = (newWidth > 0) ? newWidth + 'px' : 0
+            cd.style.opacity = (newWidth > 0) ? newWidth / cdWidth : 0
         }
-
+        
         // Xử lý khi click play
         playBtn.onclick = function () {
             if (_this.isPlaying) {
