@@ -28,6 +28,24 @@ const app = {
     config: JSON.parse(localStorage.getItem(PLAYER_STORAGE_KEY)) || {},
     songs: [
         {
+            name: 'Có Đâu Ai Ngờ',
+            singer: 'Thu Cầm',
+            path: './mp3/CoDauAiNgo-ThuCam-7857284.mp3',
+            image: 'https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/8/f/a/d/8fad544d5867f773beb186a88d9f9071.jpg'
+        },
+        {
+            name: 'Bắt Cóc Con Tim',
+            singer: 'Lou Hoàng',
+            path: './mp3/Bat Coc Con Tim - Lou Hoang.mp3',
+            image: 'https://data.chiasenhac.com/data/cover/169/168258.jpg'
+        },
+        {
+            name: "Phố Đã Lên Đèn",
+            singer: "Huyền Tâm Môn",
+            path: "./mp3/Pho Da Len Den - Huyen Tam Mon - Huyen T.mp3",
+            image: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/2/3/5/12358eabe806af65178e625d01c1dfb3.jpg"
+        },
+        {
             name: "Từ Thích Thích Thành Thương Thương",
             singer: "AMEE, Hoàng Dũng",
             path: "./mp3/tu thich thich thanh thuong th... - AMEE Hoang Dung (NhacPro.net).flac",
@@ -552,7 +570,7 @@ const app = {
         setTimeout(() => {
             $('.song.active').scrollIntoView({
                 behavior: 'smooth',
-                block: 'end'
+                block: 'end',
             })
         }, 300)
     },
