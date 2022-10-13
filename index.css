@@ -210,6 +210,12 @@
     padding: 16px 8px;
   }
 
+  @media (max-width: 768px) {
+    .song .heart{
+      padding: 22px;
+    }
+  }
+
   .song .heart-icon{
     transition: all ease-out 0.3s;
   }

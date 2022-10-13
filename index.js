@@ -28,6 +28,12 @@ const app = {
     config: JSON.parse(localStorage.getItem(PLAYER_STORAGE_KEY)) || {},
     songs: [
         {
+            name: 'Waiting For You',
+            singer: 'MONO, Onionn',
+            path: './mp3/WaitingForYou-MONOOnionn-7733882.mp3',
+            image: 'https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/e/7/7/2/e772358978fef8a02eefd34f6a4ca6f3.jpg'
+        },
+        {
             name: 'Có Đâu Ai Ngờ',
             singer: 'Thu Cầm',
             path: './mp3/CoDauAiNgo-ThuCam-7857284.mp3',
