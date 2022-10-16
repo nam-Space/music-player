@@ -28,6 +28,12 @@ const app = {
     config: JSON.parse(localStorage.getItem(PLAYER_STORAGE_KEY)) || {},
     songs: [
         {
+            name: 'Chạy Khỏi Thế Giới Này (Remix)',
+            singer: 'Da LAB, Phương Ly',
+            path: './mp3/Chay Khoi The Gioi Nay Cukak Remix_ - Da.mp3',
+            image: 'https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/5/b/9/6/5b96fdda0362a6b85fe54c4ce1d58e0b.jpg'
+        },
+        {
             name: 'Waiting For You',
             singer: 'MONO, Onionn',
             path: './mp3/WaitingForYou-MONOOnionn-7733882.mp3',
