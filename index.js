@@ -345,11 +345,11 @@ const app = {
         }
         
         // Xử lý khi click play
-        playBtn.onclick = function () {
+        playBtn.onclick = async function () {
             if (_this.isPlaying) {
                 audio.pause()
             } else {
-                audio.play()
+                await audio.play()
             }
 
         }
@@ -359,7 +359,6 @@ const app = {
             _this.isPlaying = true;
             player.classList.add('playing')
             cdThumbAnimate.play()
-            
         }
 
         // Khi song được pause
@@ -397,32 +396,32 @@ const app = {
         }
 
         // Xử lý tua song
-        progress.onchange = function(e) {
+        progress.onchange = async function(e) {
             const seekTime = audio.duration * e.target.value / 100;
-            audio.currentTime = seekTime;
+            audio.currentTime = await seekTime;
         }
 
         // Khi next song
-        nextBtn.onclick = function() {
+        nextBtn.onclick =async function() {
             if (_this.isRandom) {
                 _this.playRandomSong()
             } else {
                 _this.nextSong()
             }
-            audio.play()
+            await audio.play()
             _this.render()
             _this.scrollToActiveSong()
             
         }
 
         // Khi prev song
-        prevBtn.onclick = function() {
+        prevBtn.onclick = async function() {
             if (_this.isRandom) {
                 _this.playRandomSong()
             } else {
                 _this.prevSong()
             }
-            audio.play()
+            await audio.play()
             _this.render()
             _this.scrollToActiveSong()
 
@@ -445,16 +444,16 @@ const app = {
         }
 
         // Xử lý next song khi audio ended
-        audio.onended = function() {
+        audio.onended = async function() {
             if (_this.isRepeat) {
-                audio.play()
+                await audio.play()
             } else {
                 nextBtn.click()
             }
         }
 
         // Lắng nghe hành vi click
-        playlist.onclick = function(e) {
+        playlist.onclick =async function(e) {
             const songNode = e.target.closest('.song:not(.active)')
 
             // Xử lý khi click vào song
@@ -464,8 +463,7 @@ const app = {
                     _this.currentIndex = Number(songNode.dataset.index);
                     _this.loadCurrentSong();
                     _this.render()
-                    audio.play()
-        
+                    await audio.play()
                 }
             }
 
