@@ -28,11 +28,12 @@ const app = {
     config: JSON.parse(localStorage.getItem(PLAYER_STORAGE_KEY)) || {},
     songs: [
         {
-            name: "Dreamers",
-            image: "https://images.indianexpress.com/2022/11/Jungkook1200.jpg",
-            singer: "Jungkook",
-            path: "./mp3/Dreamers.mp3",
+            name: "All I Want For Christmas Is You",
+            image: "https://avatar-ex-swe.nixcdn.com/song/2019/12/04/1/8/7/2/1575452554797_640.jpg",
+            singer: "Mariah Carey",
+            path: "./mp3/All I Want For Christmas Is Yo... - Mariah Carey (NhacPro.net).flac",
         },
+
         {
             name: "Last Christmas",
             image: "https://image.thanhnien.vn/w660/Uploaded/2022/wsxrxqeiod/2019_12_05/last-christmas_ozhi.jpg",
@@ -44,6 +45,12 @@ const app = {
             image: "https://kenh14cdn.com/203336854389633024/2022/11/14/photo-1-1668390383400284412216.jpg",
             singer: "Ariana Grande",
             path: "./mp3/Santa Tell Me - Ariana Grande (NhacPro.net).flac",
+        },
+        {
+            name: "Dreamers",
+            image: "https://images.indianexpress.com/2022/11/Jungkook1200.jpg",
+            singer: "Jungkook",
+            path: "./mp3/Dreamers.mp3",
         },
         {
             name: "Cứ Chill Thôi",
