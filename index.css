@@ -1,43 +1,43 @@
 :root {
     --primary-color: #ec1f55;
     --text-color: #333;
-  }
-  
-  * {
+}
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: inherit;
     user-select: none;
-  }
-  
-  body {
+}
+
+body {
     background-color: #f5f5f5;
-  }
-  
-  html {
+}
+
+html {
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-  }
-  
-  .player {
+}
+
+.player {
     position: relative;
     max-width: 480px;
     margin: 0 auto;
-  }
-  
-  .player .icon-pause {
+}
+
+.player .icon-pause {
     display: none;
-  }
-  
-  .player.playing .icon-pause {
+}
+
+.player.playing .icon-pause {
     display: inline-block;
-  }
-  
-  .player.playing .icon-play {
+}
+
+.player.playing .icon-play {
     display: none;
-  }
-  
-  .dashboard {
+}
+
+.dashboard {
     overflow: hidden;
     z-index: 1;
     padding: 16px 16px 14px;
@@ -47,60 +47,60 @@
     width: 100%;
     max-width: 480px;
     border-bottom: 1px solid #ebebeb;
-  }
-  
-  /* HEADER */
-  header {
+}
+
+/* HEADER */
+header {
     text-align: center;
     margin-bottom: 10px;
-  }
-  
-  header h4 {
+}
+
+header h4 {
     color: var(--primary-color);
     font-size: 12px;
-  }
-  
-  header h2 {
+}
+
+header h2 {
     color: var(--text-color);
     font-size: 20px;
-  }
-  
-  /* CD */
-  .cd {
+}
+
+/* CD */
+.cd {
     display: flex;
     margin: auto;
     width: 200px;
-  }
-  
-  .cd-thumb {
+}
+
+.cd-thumb {
     width: 100%;
     padding-top: 100%;
     border-radius: 50%;
     background-color: #333;
     background-size: cover;
     margin: auto;
-  }
-  
-  /* CONTROL */
-  .control {
+}
+
+/* CONTROL */
+.control {
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 18px 0 8px 0;
-  }
-  
-  .control .btn {
+}
+
+.control .btn {
     color: #666;
     padding: 18px;
     font-size: 18px;
     cursor: pointer;
-  }
-  
-  .control .btn.active {
+}
+
+.control .btn.active {
     color: var(--primary-color);
-  }
-  
-  .control .btn-toggle-play {
+}
+
+.control .btn-toggle-play {
     width: 56px;
     height: 56px;
     border-radius: 50%;
@@ -110,18 +110,18 @@
     align-items: center;
     justify-content: center;
     background-color: var(--primary-color);
-  }
+}
 
-  /* Timer*/
-  .timer{
+/* Timer*/
+.timer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: rgb(48, 44, 44);
     font-size: 14px;
-  }
-  
-  .progress {
+}
+
+.progress {
     width: 100%;
     -webkit-appearance: auto;
     height: 6px;
@@ -131,24 +131,24 @@
     -webkit-transition: 0.2s;
     transition: opacity 0.2s;
     cursor: pointer;
-  }
-  
-  .progress::-webkit-slider-thumb {
+}
+
+.progress::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 8px;
     height: 6px;
     background-color: var(--primary-color);
     cursor: pointer;
-  }
-  
-  /* PLAYLIST */
-  .playlist {
+}
+
+/* PLAYLIST */
+.playlist {
     margin-top: 408px;
-    padding: 12px;
-  }
-  
-  .song {
+    padding: 12px 0;
+}
+
+.song {
     display: flex;
     align-items: center;
     margin-bottom: 12px;
@@ -157,77 +157,77 @@
     border-radius: 5px;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-  }
+}
 
-  .like{
+.like {
     padding: 16px 8px;
-  }
-  
-  .song.active {
+}
+
+.song.active {
     background-color: var(--primary-color);
-  }
-  
-  .song:active {
+}
+
+.song:active {
     opacity: 0.8;
-  }
+}
 
-  .song .active-heart{
+.song .active-heart {
     color: var(--primary-color);
-  }
+}
 
-  .song.active .heart .heart-icon,
-  .song.active .option,
-  .song.active .author,
-  .song.active .title {
+.song.active .heart .heart-icon,
+.song.active .option,
+.song.active .author,
+.song.active .title {
     color: #fff;
-  }
-  
-  .song .thumb {
+}
+
+.song .thumb {
     width: 44px;
     height: 44px;
     border-radius: 50%;
     background-size: cover;
     margin: 0 8px;
-  }
-  
-  .song .body {
+}
+
+.song .body {
     flex: 1;
     padding: 0 16px;
-  }
-  
-  .song .title {
+}
+
+.song .title {
     font-size: 18px;
     color: var(--text-color);
-  }
-  
-  .song .author {
+}
+
+.song .author {
     font-size: 12px;
     color: #999;
-  }
+}
 
-  .song .heart{
+.song .heart {
     color: #999;
     padding: 16px 8px;
-  }
+}
 
-  @media (max-width: 768px) {
-    .song .heart{
-      padding: 22px;
+@media (max-width: 768px) {
+    .song .heart {
+        padding: 22px;
     }
-  }
+}
 
-  .song .heart-icon{
+.song .heart-icon {
     transition: all ease-out 0.3s;
-  }
-  
-  .song .option {
+}
+
+.song .option {
     position: relative;
     padding: 16px 8px;
     color: #999;
     font-size: 18px;
-  }
+}
 
-  .menu-song{
+.menu-song {
     display: none;
     min-width: 140px;
     position: absolute;
@@ -240,24 +240,25 @@
     border-radius: 3px;
     transform-origin: top right;
     animation: showUp linear 0.15s;
-  }
+}
 
-  .menu-song.active-modal{
+.menu-song.active-modal {
     display: block;
-  }
+}
 
-  @keyframes showUp {
+@keyframes showUp {
     from {
-      opacity: 0;
-      transform: scale(0);
+        opacity: 0;
+        transform: scale(0);
     }
     to {
-      opacity: 1;
-      transform: scale(1);
+        opacity: 1;
+        transform: scale(1);
     }
-  }
+}
 
-  .next-song, .download{
+.next-song,
+.download {
     display: flex;
     text-align: left;
     align-items: center;
@@ -265,27 +266,29 @@
     min-height: 50px;
     padding: 6px;
     color: #333;
-  }
+}
 
-  .next-song p, .download p{
+.next-song p,
+.download p {
     padding-left: 8px;
     width: 100%;
-  }
+}
 
-  .next-song i, .download i {
+.next-song i,
+.download i {
     font-size: 18px;
-  }
+}
 
-  .next-song i{
+.next-song i {
     color: var(--primary-color);
-  }
+}
 
-  .download i{
+.download i {
     color: rgb(26, 192, 26);
-  }
+}
 
-  /* Message */
-  .message{
+/* Message */
+.message {
     position: absolute;
     top: 0;
     left: 0;
@@ -293,37 +296,39 @@
     background-color: rgb(75, 35, 235);
     opacity: 0.8;
     animation: showUpMessage ease-out 0.5s forwards;
-  }
+}
 
-  .remove-message{
+.remove-message {
     animation: hideMessage ease-out 0.5s forwards;
-  }
+}
 
-  @keyframes showUpMessage {
-    from{
-      transform: translateX(-100%);
-    } to{
-      transform: translateX(0);
+@keyframes showUpMessage {
+    from {
+        transform: translateX(-100%);
     }
-  }
-
-  @keyframes hideMessage{
-    from{
-      transform: translateX(0);
-    } to{
-      transform: translateX(-100%);
+    to {
+        transform: translateX(0);
     }
-  }
+}
 
-  .message-container{
+@keyframes hideMessage {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.message-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     color: #fff;
     height: 50px;
-  }
+}
 
-  .message-icon{
+.message-icon {
     padding-right: 8px;
-  }
+}

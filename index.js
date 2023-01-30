@@ -28,6 +28,30 @@ const app = {
     config: JSON.parse(localStorage.getItem(PLAYER_STORAGE_KEY)) || {},
     songs: [
         {
+            name: "Sài Gòn Đẹp Lắm",
+            image: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/covers/1/7/17491c56b9293b39fdce7fe01e7a2a50_1511941722.jpg",
+            singer: "Phương Vy",
+            path: "./mp3/Sai Gon Dep Lam.mp3",
+        },
+        {
+            name: "Xuân Họp Mặt",
+            image: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/covers/3/8/383b52b97cc4bb30babf22fe48cbf098_1295158253.jpg",
+            singer: "Như Quỳnh, Loan Châu, Thủy Tiên, Bảo Hân",
+            path: "./mp3/Xuan Hop Mat.mp3",
+        },
+        {
+            name: "Năm Qua Đã Làm Gì",
+            image: "https://avatar-ex-swe.nixcdn.com/song/2022/11/23/2/7/8/f/1669174758056_640.jpg",
+            singer: "Noo Phước Thịnh",
+            path: "./mp3/Nam Qua Da Lam Gi.mp3",
+        },
+        {
+            name: "Đi Về Nhà",
+            image: "https://img.meta.com.vn/Data/image/2020/12/19/loi-bai-hat-di-ve-nha-2.jpg",
+            singer: "Đen Vâu x JustaTee",
+            path: "./mp3/Di Ve Nha.mp3",
+        },
+        {
             name: "All I Want For Christmas Is You",
             image: "https://avatar-ex-swe.nixcdn.com/song/2019/12/04/1/8/7/2/1575452554797_640.jpg",
             singer: "Mariah Carey",
@@ -80,7 +104,7 @@ const app = {
             name: "Bắt Cóc Con Tim",
             singer: "Lou Hoàng",
             path: "./mp3/Bat Coc Con Tim - Lou Hoang.mp3",
-            image: "https://data.chiasenhac.com/data/cover/169/168258.jpg",
+            image: "https://avatar-ex-swe.nixcdn.com/song/2022/07/30/1/4/1/5/1659181132642_640.jpg",
         },
         {
             name: "Phố Đã Lên Đèn",
@@ -122,7 +146,7 @@ const app = {
             name: "Có Hẹn Với Thanh Xuân",
             singer: "Monstar",
             path: "./mp3/Co Hen Voi Thanh Xuan - Monstar.mp3",
-            image: "https://data.chiasenhac.com/data/cover/144/143191.jpg",
+            image: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/e/2/3/f/e23ff2faaa64eebfc57e0acde247f0db.jpg",
         },
         {
             name: "Sài Gòn Đau Lòng Quá",
@@ -176,7 +200,7 @@ const app = {
             name: "Tình Bạn Diệu Kỳ",
             singer: "AMee, Ricky Star, Lăng LD",
             path: "./mp3/Tinh ban dieu ky.mp3",
-            image: "https://data.chiasenhac.com/data/cover/137/136473.jpg",
+            image: "https://avatar-ex-swe.nixcdn.com/playlist/share/2021/03/02/0/a/e/9/1614678459844.jpg",
         },
         {
             name: "Yêu Là Tha Thu",
@@ -218,7 +242,7 @@ const app = {
             name: "Có Chắc Yêu Là Đây",
             singer: "Sơn Tùng M-TP",
             path: "./mp3/Co Chac Yeu La Day.m4a",
-            image: "https://data.chiasenhac.com/data/cover/124/123405.jpg",
+            image: "https://nld.mediacdn.vn/2020/7/6/hecr7ia-15940028416911376997186.jpeg",
         },
         {
             name: "Em Không Sai, Chúng Ta Sai",
@@ -242,7 +266,7 @@ const app = {
             name: "Gái Độc Thân",
             singer: "Tlinh",
             path: "./mp3/GaiDocThan-tlinh-7041472.mp3",
-            image: "https://data.chiasenhac.com/data/cover/143/142338.jpg",
+            image: "https://media.viez.vn/prod/2021/7/2/thumb_T_Linh_79937daedf.jpg",
         },
         {
             name: "Vì Yêu Cứ Đâm Đầu",
