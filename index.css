@@ -214,6 +214,10 @@ header h2 {
     .song .heart {
         padding: 22px;
     }
+
+    .playlist {
+        padding: 12px;
+    }
 }
 
 .song .heart-icon {
