@@ -336,7 +336,7 @@ const app = {
                     </div>
                     <div class="heart" data-index=${index}>
                         <i class="heart-icon ${
-                            this.heartList.includes(index)
+                            this.heartList?.includes(index)
                                 ? "active-heart fa-solid"
                                 : "fa-regular"
                         } fa-heart"></i>
