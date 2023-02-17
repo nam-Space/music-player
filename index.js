@@ -28,6 +28,12 @@ const app = {
     config: JSON.parse(localStorage.getItem(PLAYER_STORAGE_KEY)) || {},
     songs: [
         {
+            name: "Kìa Bóng Dáng Ai",
+            image: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/6/3/f/b/63fb6b25051e8d0bb4f9561158f16ae9.jpg",
+            singer: "Pháo, Sterry",
+            path: "./mp3/Kia Bong Dang Ai.mp3",
+        },
+        {
             name: "Sài Gòn Đẹp Lắm",
             image: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/covers/1/7/17491c56b9293b39fdce7fe01e7a2a50_1511941722.jpg",
             singer: "Phương Vy",
