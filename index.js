@@ -28,6 +28,12 @@ const app = {
     config: JSON.parse(localStorage.getItem(PLAYER_STORAGE_KEY)) || {},
     songs: [
         {
+            name: "Em Đồng Ý (I Do)",
+            image: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/c/4/0/d/c40dbb2a1bf4dfd1229b7bc29efebe4b.jpg",
+            singer: "Đức Phúc, 911",
+            path: "./mp3/Em Dong Y (I Do).mp3",
+        },
+        {
             name: "Kìa Bóng Dáng Ai",
             image: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/6/3/f/b/63fb6b25051e8d0bb4f9561158f16ae9.jpg",
             singer: "Pháo, Sterry",
@@ -591,7 +597,7 @@ const app = {
                         messageIcon.classList.add("fa-circle-play");
 
                         messageText.innerText =
-                            "Đã thêm bài hát vào danh sách tiếp theo";
+                            "Đã thêm bài hát vào lời phát tiếp theo";
 
                         dashboard.appendChild(newMessage);
 
