@@ -8,7 +8,7 @@
     margin: 0;
     box-sizing: inherit;
     user-select: none;
-    --webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
